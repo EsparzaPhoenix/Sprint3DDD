@@ -2,11 +2,19 @@ package br.com.fiap.challenge.model;
 
 public class Veiculo {
 	
-	private int id;
 	private String modelo;
 	private int ano;
 	private double valor;
 	private int heixo;
+	private int codigo;
+	
+	public Veiculo(String modelo, int ano, double valor, int heixo, int codigo) {
+		this.modelo = modelo;
+		this.ano = ano;
+		this.valor = valor;
+		this.heixo = heixo;
+		this.codigo = codigo;
+	}
 	
 	public String getModelo() {
 		return modelo;
@@ -27,13 +35,6 @@ public class Veiculo {
 		this.valor = valor;
 	}
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) { 
-		this.id = id;
-	}
-	
 	public int getHeixo() {
 		return heixo;
 	}
@@ -45,7 +46,20 @@ public class Veiculo {
 		return this.valor * ((0.25 * this.heixo));
 		
 	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
 	
-	
+	//Método para exibição de informações do cliente
+    public void exibirInformacoesVeiculo() {
+    	System.out.println("Modelo: " + modelo);
+    	System.out.println("Ano: " + ano);
+    	System.out.println("Valor: " + valor);
+    	System.out.println("Heixo:" + heixo);
+    	System.out.println("Codigo: " + codigo);
+    }
 	
 }

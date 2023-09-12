@@ -152,10 +152,10 @@ public class Main {
     	int ano = scanner.nextInt();
     	System.out.print("digite o valor do veiculo: ");
     	double valor = scanner.nextDouble();
-    	System.out.print("digite o numero de Heixos: ");
-    	int heixo = scanner.nextInt();
+    	System.out.print("digite o numero de Rodas: ");
+    	int rodas = scanner.nextInt();
     	
-    	Veiculo veiculo = new Veiculo(modelo, ano, valor, heixo, 0);
+    	Veiculo veiculo = new Veiculo(modelo, ano, valor, rodas, 0);
     	veiculoDao.cadastrarVeiculo(veiculo);
     	System.out.println("Veiculo Cadastrado com sucesso. \n");
     } 
@@ -173,10 +173,10 @@ public class Main {
     		int ano = scanner.nextInt();
     		System.out.println("Digite o novo valor do veiculo: ");
     		double valor = scanner.nextDouble();
-    		System.out.println("Digite o novo numero de heixos: ");
-    		int heixo = scanner.nextInt();
+    		System.out.println("Digite o novo numero de Rodas: ");
+    		int rodas = scanner.nextInt();
     		
-    		Veiculo veiculoAtualizado = new Veiculo(modelo, ano, valor, heixo, 0);
+    		Veiculo veiculoAtualizado = new Veiculo(modelo, ano, valor, rodas, 0);
     		veiculoDao.editarVeiculo(veiculoAtualizado);
     		System.out.println("Veiculo atualizado com sucesso. \n");
     	} else {

@@ -5,14 +5,14 @@ public class Veiculo {
 	private String modelo;
 	private int ano;
 	private double valor;
-	private int heixo;
+	private int rodas;
 	private int codigo;
 	
-	public Veiculo(String modelo, int ano, double valor, int heixo, int codigo) {
+	public Veiculo(String modelo, int ano, double valor, int rodas, int codigo) {
 		this.modelo = modelo;
 		this.ano = ano;
 		this.valor = valor;
-		this.heixo = heixo;
+		this.rodas = rodas;
 		this.codigo = codigo;
 	}
 	
@@ -35,15 +35,15 @@ public class Veiculo {
 		this.valor = valor;
 	}
 	
-	public int getHeixo() {
-		return heixo;
+	public int getRodas() {
+		return rodas;
 	}
-	public void setHeixo(int heixo) {
-		this.heixo = heixo;
+	public void setRodas(int heixo) {
+		this.rodas = heixo;
 	}
 	
 	public double calcularSeguro() {
-		return this.valor * ((0.25 * this.heixo));
+		return this.valor * ((0.25 * this.rodas));
 		
 	}
 	public int getCodigo() {
@@ -58,7 +58,7 @@ public class Veiculo {
     	System.out.println("Modelo: " + modelo);
     	System.out.println("Ano: " + ano);
     	System.out.println("Valor: " + valor);
-    	System.out.println("Heixo:" + heixo);
+    	System.out.println("Rodas:" + rodas);
     	System.out.println("Codigo: " + codigo);
     }
 	
